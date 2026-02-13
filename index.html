@@ -5,19 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link>https://github.com/Gauss09SVD/ono-tebe-nado-fd/blob/main/fonts/fonts.css</link>
+    <!-- Подключение шрифтов -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!-- Глобальные стили -->
+    <link rel="stylesheet" href="css/globals.css">
+    <!-- Локальные стили проекта -->
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header>
-      <nav></nav>
-      <а></а>
-      <address></address>
+    <header class="header">
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item"><a href="#" class="header__link">Главная</a></li>
+          <li class="header__links-list-item"><a href="#" class="header__link">Каталог</a></li>
+          <li class="header__links-list-item"><a href="#" class="header__link">О нас</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="header__logo">
+        <img src="images/logo.png" alt="Логотип «Оно тебе надо»" class="header__logo-image">
+      </a>
+      <address class="header__address">
+        <a href="tel:+74951234567">+7 (495) 123-45-67</a><br>
+        <a href="mailto:info@onotebe.ru">info@onotebe.ru</a>
+      </address>
     </header>
+
     <main>
-      <h1></h1>
-      <div class = .description>
-      
+      <!-- Секция-обложка -->
+      <section class="cover">
+        <div class="overlay"></div>
+        <h1 class="cover__title">
+          <span class="aligned-text aligned-text_center">Оно</span>
+          <span class="aligned-text aligned-text_center">тебе</span>
+          <span class="aligned-text aligned-text_center">надо</span>
+        </h1>
+        <div class="cover__description">
+          <p class="cover__description-text letter-spacing-extended">
+            Аукцион вещей, в которые никто не верил
+          </p>
+          <button class="bet-button">Сделать ставку</button>
+        </div>
+      </section>
+
+      <!-- Секция с карточками лотов -->
+      <section class="lots">
+        <h2 class="lots__heading">Наши лоты</h2>
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item">
+            <a href="#" class="card-link">
+              <article class="card card_type_film">
+                <div class="overlay"></div>
+                <h3 class="card__title">Старый кинопроектор</h3>
+                <p class="card__text">Работает, но требует ремонта.</p>
+              </article>
+            </a>
+          </li>
+          <li class="lots__card-list-item">
+            <a href="#" class="card-link">
+              <article class="card card_type_book">
+                <div class="overlay"></div>
+                <h3 class="card__title">Редкое издание «Мастера и Маргариты»</h3>
+                <p class="card__text">1966 год, тираж 5000 экз.</p>
+              </article>
+            </a>
+          </li>
+          <li class="lots__card-list-item">
+            <a href="#" class="card-link">
+              <article class="card card_type_picture">
+                <div class="overlay"></div>
+                <h3 class="card__title">Картина неизвестного художника</h3>
+                <p class="card__text">Масло, холст, 50 × 60 см.</p>
+              </article>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="lots__look-more-link">Посмотреть больше</a>
+      </section>
+
+      <!-- Секция «Об аукционе» -->
+      <section class="about">
+        <div class="about__column">
+          <div class="about__logo">
+            <img src="images/logo-white.png" alt="Логотип" class="about__logo-image">
+          </div>
+        </div>
+        <div class="about__column">
+          <h2 class="about__title">Об аукционе</h2>
+          <div class="about__text">
+            <p>Мы собираем вещи, которые кажутся ненужными, и даём им второй шанс. Каждый лот — история, которую вы можете купить.</p>
+            <p>Аукцион проходит каждую пятницу в 19:00 по московскому времени.</p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
- </body>
+
+    <footer class="footer">
+      <address class="address">
+        <p>г. Москва, ул. Примерная, д. 1</p>
+        <a href="tel:+74951234567">+7 (495) 123-45-67</a><br>
+        <a href="mailto:info@onotebe.ru">info@onotebe.ru</a>
+      </address>
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item"><a href="#" class="footer__menu-link">Главная</a></li>
+          <li class="footer__menu-list-item"><a href="#" class="footer__menu-link">Каталог</a></li>
+          <li class="footer__menu-list-item"><a href="#" class="footer__menu-link">О нас</a></li>
+        </ul>
+      </nav>
+      <div class="footer__social-list">
+        <a href="https://vk.com/" class="footer__social-link">
+          <img src="images/vk.svg" alt="ВКонтакте" class="footer__social-icon">
+        </a>
+        <a href="https://t.me/" class="footer__social-link">
+          <img src="images/telegram.svg" alt="Telegram" class="footer__social-icon">
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
