@@ -1,9 +1,7 @@
-/* Глобальные отступы и фон */
 body {
   background-color: #f5f5f5;
 }
 
-/* Шапка */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;/* место для вашего кода */
