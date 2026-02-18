@@ -16,10 +16,8 @@
   font-display: swap;
 }
 
-/* Пример подключения шрифта через @import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Если шрифты локальные — укажите пути */
 @font-face {
   font-family: 'MyFont';
   src: url('../fonts/MyFont-Regular.woff2') format('woff2'),
